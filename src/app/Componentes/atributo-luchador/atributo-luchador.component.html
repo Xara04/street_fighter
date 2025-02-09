@@ -1,0 +1,48 @@
+<!-- atributo-luchador.component.html -->
+<div *ngIf="character">
+  <h3>{{ character.nombre }}</h3>
+  
+  <!-- Barra de progreso para fuerza -->
+  <div class="fuerza-container">
+    <label for="fuerza">Fuerza</label>
+    <div class="progress-bar">
+      <div
+        class="progress"
+        [ngStyle]="{ 'width': character.fuerza + '%' }"
+        [title]="character.fuerza + '% Fuerza'">
+      </div>
+    </div>
+  </div>
+
+    <!-- Barra de progreso para destreza -->
+    <div class="destreza-container">
+      <label for="destreza">Destreza</label>
+      <div class="progress-bar">
+        <div
+          class="progress"
+          [ngStyle]="{ 'width': character.destreza + '%' }"
+          [title]="character.destreza + '% Destreza'">
+        </div>
+      </div>
+    </div>
+
+        <!-- Barra de progreso para vida -->
+        <div class="vida-container">
+          <label for="vida">Vida</label>
+          <div class="progress-bar">
+            <div
+              class="progress"
+              [ngStyle]="{ 'width': character.vida + '%'  }"
+              [title]="character.vida + '% Vida'">
+            </div>
+          </div>
+        </div>
+</div>
+
+
+
+
+
+
+
+

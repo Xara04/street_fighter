@@ -1,0 +1,28 @@
+h1{
+    color: #0F659C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em
+  ;
+  }
+  
+  /*body{
+    background-image: url("../assets/sin-titulo-2023-12-01t143511.128-143240-1024x576.jpg");
+    width: 1024px;
+    height: 576px;
+    background-repeat: no-repeat;
+
+  
+  }*/
+
+  /* src/app/app.component.css */
+.game-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.character-details {
+  width: 40%;
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #ccc;
+}

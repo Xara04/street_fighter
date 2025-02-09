@@ -1,0 +1,6 @@
+para arrancar tenemos que entrar dentro de la carpeta server y el comando es: node server.js, para comprobar que funciona el json en el
+navegador pon la siguiente ruta: http://localhost:3000/api/characters
+
+si no te funciona ejecuta dentro de la carpeta server estos comando: 
+  npm init -y     
+    npm install express

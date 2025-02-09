@@ -1,0 +1,52 @@
+.table-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 20px;
+  text-align: center;
+}
+
+.retrato {
+  text-align: center;
+}
+
+.retrato-img {
+  width: 150px; /* Ajusta el tamaño según lo que necesites */
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gif-container {
+  width: 40%; /* El ancho del contenedor de la animación */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.gif-container img {
+  width: 500 px; /* Ajustar el tamaño del gif según sea necesario */
+  max-width: 400px;
+  margin-top: 10px;
+}
+.area-seleccion {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba( 0, 140, 234, 0.3);
+  width: 1500px;
+  height: 500px;
+  margin: 20px;
+}
+.gif{
+  height: 200px;
+  padding-left: 10px;
+}

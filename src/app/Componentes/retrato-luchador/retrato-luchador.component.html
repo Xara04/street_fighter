@@ -1,0 +1,12 @@
+
+
+  <img [src]="character.retrato" class="retrato-img"
+  [ngStyle]="{
+    'border': isSelected ? '10px solid ' + colorAsociado : 'none',
+    'cursor': 'pointer',
+  }"
+ (click)="selectCharacter()"
+ />
+
+
+
