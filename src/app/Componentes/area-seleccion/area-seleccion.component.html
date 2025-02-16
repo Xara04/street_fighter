@@ -40,9 +40,14 @@
       <!-- Columna 3: Mostrar nombre del luchador seleccionado -->
       <td *ngIf="selectedCharacter">
         <div class="name-container">
-          <app-atributo-luchador [character]="selectedCharacter"></app-atributo-luchador>
+          <app-atributo-luchador [character]="selectedCharacter"></app-atributo-luchador>  
+          <!-- Botón para ir a area-luchadores -->
+          <button (click)="irAreaLuchadores()" class="btn-combate">
+            Ir a Área de Combate
+          </button>        
         </div>
       </td>
     </tr>
   </table>
+ 
 </div>

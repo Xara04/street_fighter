@@ -1,0 +1,10 @@
+<h2>¡Ganador del Combate!</h2>
+<div class="campo">
+    <div *ngIf="luchadorGanador" class="luchador">
+        <h3>{{ luchadorGanador.nombre }}</h3>
+        <img [src]="luchadorGanador.animacion"
+            alt="{{ luchadorGanador.nombre }}" />
+        <p>{{ luchadorGanador.descripcion }}</p>
+    </div>
+
+</div>

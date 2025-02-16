@@ -1,0 +1,116 @@
+h2{
+    text-align: center;
+    color: violet
+}
+
+/* Estilo general para el campo de batalla */
+.campo-batalla {
+    display: flex;
+    justify-content: space-around;  /* Coloca los luchadores uno al lado del otro */
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    width: 1500px;
+    height: 500px;
+    border-radius: 5px;
+    margin: 20px ;
+    
+  }
+  
+  .batalla{
+    background-image: url('../../../assets/cmapo3.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  /* Esto centra el contenido horizontal y verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    text-align: center;
+  }
+  /* Estilos para los luchadores */
+  .luchador {
+    text-align: center;
+    max-width: 200px;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  /* Barra de fuerza en la parte superior */
+  .barra-fuerza {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Barra de progreso de la fuerza */
+  .barra {
+    height: 100%;
+    background-color: #ff5733; /* Color de la barra de fuerza */
+    transition: width 1s ease-out;
+    border-radius: 5px;
+  }
+  
+  /* Estilo de las imágenes de los luchadores */
+  .luchador img {
+    width: 200px;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  /* Títulos de los luchadores */
+  h3 {
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: white;
+  }
+  
+  /* Descripción del luchador */
+  p {
+    font-size: 0.9em;
+    color: #666;
+  }
+  /* Estilo para mostrar el resultado del combate */
+.resultado {
+  text-align: center;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.resultado h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.resultado h4 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.ganador {
+  margin-top: 20px;  /* Separación entre los luchadores y el botón */
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.ganador:hover {
+  background-color: #45a049;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}

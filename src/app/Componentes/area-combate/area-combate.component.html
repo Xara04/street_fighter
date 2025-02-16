@@ -1,0 +1,34 @@
+<h2>ÁREA DE LUCHADORES</h2>
+
+<div *ngIf="luchadorSeleccionado && luchadorAleatorio" class="combate-container">
+  <!-- Contenedor de los luchadores (uno frente al otro) -->
+  <div class="luchador-container">
+    <!-- Luchador seleccionado -->
+    <div class="luchador">
+      <h3>{{ luchadorSeleccionado.nombre }}</h3>
+      <img [src]="luchadorSeleccionado.animacion" alt="{{ luchadorSeleccionado.nombre }}" class="luchador-img"/>
+      <p>{{ luchadorSeleccionado.descripcion }}</p>
+    </div>
+
+    <div class="vs-container">
+      <h1>VS</h1>
+    </div>
+
+    <!-- Luchador aleatorio -->
+    <div class="luchador">
+      <h3>{{ luchadorAleatorio.nombre }}</h3>
+      <img [src]="luchadorAleatorio.animacion" alt="{{ luchadorAleatorio.nombre }}" class="luchador-img"/>
+      <p>{{ luchadorAleatorio.descripcion }}</p>
+    </div>
+  </div>
+
+  <!-- Botones para navegar debajo de los luchadores -->
+  <div class="button-container">
+    <button (click)="regresarAlAreaSeleccion()" class="btn-combate">
+      Regresar a Área de Selección
+    </button>
+    <button (click)="irAlCampoDeBatalla()" class="btn-combate">
+      Ir al Campo de Batalla
+    </button>
+  </div>
+</div>

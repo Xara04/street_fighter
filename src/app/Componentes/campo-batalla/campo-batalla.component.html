@@ -1,0 +1,29 @@
+<h2>Campo de Batalla</h2>
+<div class="batalla">
+
+    <div *ngIf="luchador1 && luchador2" class="campo-batalla">
+      <!-- Luchador 1 -->
+      <div class="luchador" *ngIf="luchador1">
+        <div class="barra-fuerza">
+          <div class="barra" [style.width.%]="luchador1.fuerza"></div>
+        </div>
+        <h3>{{ luchador1.nombre }}</h3>
+        <img [src]="luchador1.animacion" alt="{{ luchador1.nombre }}" />
+        <p>{{ luchador1.descripcion }}</p>
+      </div>
+    
+      <!-- Luchador 2 -->
+      <div class="luchador" *ngIf="luchador2">
+        <div class="barra-fuerza">
+          <div class="barra" [style.width.%]="luchador2.fuerza"></div>
+        </div>
+        <h3>{{ luchador2.nombre }}</h3>
+        <img [src]="luchador2.animacion" alt="{{ luchador2.nombre }}" />
+        <p>{{ luchador2.descripcion }}</p>
+      </div>
+    </div>
+    
+    <!-- Botón para determinar el ganador -->
+    <button (click)="determinarGanador()" class="ganador">El ganador es...</button>
+    
+</div>

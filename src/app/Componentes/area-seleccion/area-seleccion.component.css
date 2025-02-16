@@ -48,5 +48,20 @@ td {
 }
 .gif{
   height: 200px;
-  padding-left: 10px;
+  padding-left: 50px;
+}
+
+.btn-combate {
+  background-color: #4CAF50; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+  font-size: 16px; /* Tamaño de la fuente */
+  margin-top: 10px; /* Margen superior */
+}
+
+.btn-combate:hover {
+  background-color: #45a049; /* Cambiar color al pasar el mouse */
 }

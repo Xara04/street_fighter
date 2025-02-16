@@ -1,0 +1,30 @@
+.campo{
+    background-image: url('../../../assets/cmapo3.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  /* Esto centra el contenido horizontal y verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: blue;
+}
+h3{
+    text-align: center;
+    color: black;
+    font-size: 2em;
+}
+.luchador {
+    text-align: center;
+    max-width: 200px;
+    margin: 10px;
+    padding: 10px;
+  }
+  .luchador-img {
+    width: 200px;
+    height: auto;
+    margin: 10px 0;
+  }
